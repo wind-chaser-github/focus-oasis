@@ -10,7 +10,7 @@ export const Timer = () => {
 
   // The actual tick interval
   useEffect(() => {
-    let interval: NodeJS.Timeout;
+    let interval: ReturnType<typeof setInterval>;
     if (status === 'focusing') {
       interval = setInterval(() => {
         tick();

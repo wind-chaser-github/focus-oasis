@@ -1,8 +1,6 @@
 import { Canvas } from '@react-three/fiber';
-import { Environment } from '@react-three/drei';
-import { EffectComposer, Bloom, Vignette, Noise, ChromaticAberration } from '@react-three/postprocessing';
+import { EffectComposer, Bloom, Vignette, Noise } from '@react-three/postprocessing';
 import { BlendFunction } from 'postprocessing';
-import * as THREE from 'three';
 import { Suspense } from 'react';
 import { Plant } from './Plant';
 
@@ -20,7 +18,7 @@ export const Scene = () => {
           <Plant />
         </Suspense>
         
-        <EffectComposer disableNormalPass>
+        <EffectComposer>
           <Bloom 
             luminanceThreshold={0.2} 
             mipmapBlur 

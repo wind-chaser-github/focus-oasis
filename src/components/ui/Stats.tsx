@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useTimerStore } from '../../store/useTimerStore';
-import { Sprout, Clock, X } from 'lucide-react';
+import { Sprout, X } from 'lucide-react';
 
 export const Stats = () => {
   const { totalFocusTime, completedSessions, garden, status } = useTimerStore();

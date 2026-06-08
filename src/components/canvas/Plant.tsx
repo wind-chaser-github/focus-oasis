@@ -94,7 +94,7 @@ const BranchNode = ({ data, depth = 0, isDead = false }: { data: any, depth?: nu
     }
   }, [isDead]);
 
-  useFrame((state) => {
+  useFrame(() => {
     if (!isDead && isLeaf && crystalRef.current) {
       // Float animation
       crystalFloatY.current += 0.02;

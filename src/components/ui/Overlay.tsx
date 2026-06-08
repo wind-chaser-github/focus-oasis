@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useTimerStore } from '../../store/useTimerStore';
 
 export const Overlay = () => {
